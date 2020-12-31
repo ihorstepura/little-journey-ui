@@ -13,16 +13,9 @@ import { CostInputComponent } from './ui/cost-input/cost-input.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import {
-    NgxMatDatetimePickerModule,
-    NgxMatTimepickerModule,
-} from '@angular-material-components/datetime-picker';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ButtonComponent } from './ui/button/button.component';
-
-import { CommonModule, CurrencyPipe } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -43,12 +36,8 @@ import { CommonModule, CurrencyPipe } from '@angular/common';
         MatInputModule,
         ReactiveFormsModule,
         MatButtonModule,
-        NgxMatDatetimePickerModule,
-        NgxMatTimepickerModule,
-        MatDatepickerModule,
-        CommonModule,
     ],
-    providers: [CurrencyPipe],
+    providers: [],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
